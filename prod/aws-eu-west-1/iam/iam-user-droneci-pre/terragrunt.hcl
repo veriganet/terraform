@@ -14,7 +14,8 @@ inputs = {
   policy_description = "IAM user user for droneci pre step"
 
   policies = [
-    "arn:aws:iam::aws:policy/AmazonS3FullAccess"
+    "arn:aws:iam::aws:policy/AmazonS3FullAccess",
+    "arn:aws:iam::aws:policy/AmazonEC2ContainerRegistryFullAccess"
   ]
 
 }
