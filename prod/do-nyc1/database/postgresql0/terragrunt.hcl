@@ -34,4 +34,14 @@ inputs = {
       "value": dependency.vpc.outputs.ip_range
     }
   ]
+
+  pools = {
+    defaultdb = {
+      "mode" = "transaction",
+      "size" = "20",
+      "db_name" = "defaultdb",
+      "user" = "doadmin"
+    }
+  }
+
 }
