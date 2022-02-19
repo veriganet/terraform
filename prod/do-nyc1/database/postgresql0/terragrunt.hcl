@@ -32,15 +32,19 @@ inputs = {
     {
       "type": "ip_addr"
       "value": dependency.vpc.outputs.ip_range
+    },
+    {
+      "type": "ip_addr"
+      "value": "174.92.112.52"
     }
   ]
 
   pools = {
     defaultdb = {
       "mode" = "transaction",
-      "size" = "20",
-      "db_name" = "defaultdb",
-      "user" = "doadmin"
+      "size" = "10",
+      "db_name" = "vault",
+      "user" = "vault"
     }
   }
 
