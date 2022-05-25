@@ -13,7 +13,9 @@ dependency "vpc" {
 
 inputs = {
   name = "k8s1"
-  default_pool_auto_scale = true
+  default_pool_name = "worker0"
+  default_pool_auto_scale = false
+  default_pool_node_count = 6
   default_pool_min_nodes = "6"
   default_pool_max_nodes = "10"
   default_pool_size = "s-4vcpu-8gb"
