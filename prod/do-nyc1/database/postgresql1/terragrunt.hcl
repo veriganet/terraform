@@ -16,12 +16,12 @@ dependency "k8s" {
 }
 
 inputs = {
-  name  = "postgresql0"
+  name  = "postgresql1"
   engine = "pg"
   engine_version = "13"
   node_count = "2"
   region = "nyc1"
-  size = "db-s-2vcpu-4gb"
+  size = "db-s-1vcpu-2gb"
   private_network_uuid = dependency.vpc.outputs.vpc_id
 
   firewall_rules = [
